@@ -4,7 +4,7 @@
     #RewriteRule (.*) https://firstchoize.com/$1 [R=301,L]
     RewriteBase /
     Options + FollowSymLinks
-    RewriteCond %{REQUEST_FILENAME}\.html -f
+    # RewriteCond %{REQUEST_FILENAME}\.html -f
     #RewriteCond %{REQUEST_FILENAME} !-f
     # RewriteCond %{HTTP_HOST} ^www\.yegcompunding\.com [NC]
     # RewriteRule ^(.*)$ http://yegcompunding.com/$1 [L,R=301]
