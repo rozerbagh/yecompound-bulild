@@ -5,12 +5,7 @@
     RewriteBase /
     Options +FollowSymLinks
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^(.*)$ index.html [L,QSA]
-    RewriteRule ^(.*)$ login.html [L,QSA]
-    RewriteRule ^(.*)$ signup.html [L,QSA]
-    RewriteRule ^(.*)$ compounding.html [L,QSA]
-    RewriteRule ^(.*)$ services.html [L,QSA]
-    RewriteRule ^(.*)$ orders.html [L,QSA]
+    RewriteRule ^(.*)$ *.html [L,QSA]
     RewriteEngine On
     RewriteCond %{HTTPS} off
     #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
